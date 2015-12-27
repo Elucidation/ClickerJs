@@ -2,7 +2,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var React = require('react');
+// Get Upgrade list configuration from json file
 var buttonUpgradeFullList = require('./upgrades.json');
 
 // Autoclick update rate in milliseconds
@@ -50,7 +50,6 @@ var UpgradeButton = React.createClass({
   }
 });
 
-//<button type="button" onClick={submitUpgradeHandler.bind(null,upgrade.id)} key={upgrade.id}>{upgrade.label}</button>
 // Upgrade auto clickers based on button selected
 var ClickButtonUpgrades = React.createClass({
   render: function() {
