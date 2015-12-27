@@ -21,3 +21,10 @@ rsync --delete-after --recursive \
       --exclude=.git \
       --exclude=.gitignore \
       dist/ .
+
+# Commit and push
+git commit -am "deploy gh-pages"
+git push
+
+# Return to master branch
+git checkout master
