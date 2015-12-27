@@ -10,4 +10,4 @@ Build `bundle.js` using:
 
     npm run build
 
-Then open `index.html` with your browser.
+Then open `index.html` with your browser, or see it live on github at http://elucidation.github.io/ClickerJs
