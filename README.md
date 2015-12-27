@@ -1,8 +1,8 @@
 # ClickerJs
-Simple clicking game to learn React
+Simple clicking game to learn [React](https://facebook.github.io/react/)
 
 ## Installation
-Install dependencies using `npm`:
+Install dependencies using [npm](https://docs.npmjs.com/getting-started/what-is-npm):
 
     npm install
 

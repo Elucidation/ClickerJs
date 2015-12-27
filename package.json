@@ -4,7 +4,7 @@
   "description": "Simple clicking game to learn React",
   "main": "app/index.jsx",
   "scripts": {
-    "build": "browserify -t [ babelify --presets [ react ] ] app/index.jsx -o public/bundle.js",
+    "build": "browserify -t [ babelify --presets [ react ] ] app/index.jsx -o app/public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,5 +1,5 @@
 # Ignore built bundle.js
-public/bundle.js
+bundle.js
 
 # Logs
 logs
