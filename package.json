@@ -1,6 +1,6 @@
 {
   "name": "clickerjs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Simple clicking game to learn React",
   "main": "app/index.jsx",
   "scripts": {
