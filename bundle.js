@@ -96,7 +96,7 @@ process.umask = function() { return 0; };
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var React = require('react');
+// Get Upgrade list configuration from json file
 var buttonUpgradeFullList = require('./upgrades.json');
 
 // Autoclick update rate in milliseconds
@@ -149,21 +149,27 @@ var UpgradeButton = React.createClass({
     var numUpgraded = state.upgrades[id];
     var isDisabled = state.clicks < upgrade.minclicks;
     return React.createElement(
-      'button',
-      { type: 'button',
-        onClick: this.props.submitUpgrade,
-        key: id,
-        disabled: isDisabled },
-      upgrade.label,
-      ' (',
-      upgrade.ratepersecond,
-      ' cps) x ',
-      numUpgraded
+      'span',
+      { id: id },
+      React.createElement(
+        'button',
+        { type: 'button',
+          onClick: this.props.submitUpgrade,
+          key: id,
+          disabled: isDisabled },
+        upgrade.label,
+        ' (',
+        upgrade.ratepersecond,
+        ' cps) x ',
+        numUpgraded
+      ),
+      ' - Cost : ',
+      upgrade.minclicks,
+      ' clicks'
     );
   }
 });
 
-//<button type="button" onClick={submitUpgradeHandler.bind(null,upgrade.id)} key={upgrade.id}>{upgrade.label}</button>
 // Upgrade auto clickers based on button selected
 var ClickButtonUpgrades = React.createClass({
   displayName: 'ClickButtonUpgrades',
