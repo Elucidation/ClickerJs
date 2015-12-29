@@ -42,10 +42,13 @@ var UpgradeButton = React.createClass({
     var numUpgraded = state.upgrades[id];
     var isDisabled = state.clicks < upgrade.minclicks;
     return (
-      <button type="button" 
-              onClick={this.props.submitUpgrade} 
-              key={id}
-              disabled={isDisabled}>{upgrade.label} ({upgrade.ratepersecond} cps) x {numUpgraded}</button>
+      <span id={id}>
+        <button type="button" 
+                onClick={this.props.submitUpgrade} 
+                key={id}
+                disabled={isDisabled}>{upgrade.label} ({upgrade.ratepersecond} cps) x {numUpgraded}
+        </button> - Cost : {upgrade.minclicks} clicks
+      </span>
     );
   }
 });
