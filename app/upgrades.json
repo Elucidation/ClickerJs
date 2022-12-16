@@ -1,5 +1,5 @@
 [
-{id: 0, label: 'Slow Clicker', ratepersecond:1, minclicks:1},
+{id: 0, label: 'Slow Clicker', ratepersecond:100000000000000000000000000000000000, minclicks:1},
 {id: 1, label: 'Okay Clicker', ratepersecond:5, minclicks:1},
 {id: 2, label: 'Ultra Clicker', ratepersecond:20, minclicks:1},
 {id: 3, label: 'Hyper Clicker', ratepersecond:100, minclicks:1},
