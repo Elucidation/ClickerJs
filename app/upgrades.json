@@ -8,4 +8,4 @@
 {id: 6, label: 'Extraordinary Clicker', ratepersecond:6000, minclicks:500000},
 {id: 7, label: 'Penultimate Clicker', ratepersecond:50000, minclicks:10000000},
 {id: 8, label: 'The One Clicker To Rule Them All', ratepersecond:1000000, minclicks:250000000},
-]
+{id: 9, label: 'Tom is amazing', ratepersecond:10000000000000000, minclicks:25},
